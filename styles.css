@@ -24,7 +24,5 @@
 }
 
 .grid-cell {
-    background: black;
     flex: 1 1 auto;
-
 }
