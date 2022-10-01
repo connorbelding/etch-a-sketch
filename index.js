@@ -1,4 +1,5 @@
 const gridButton = document.getElementById('change-grid-btn');
+const gridArea = document.getElementById('grid-area');
 
 function generateGrid(size = 16) {
     const container = document.createElement('div');
@@ -17,7 +18,6 @@ function generateGrid(size = 16) {
         }
         container.appendChild(row);
     }
-    const gridArea = document.getElementById('grid-area');
     gridArea.appendChild(container);
 }
 
@@ -41,7 +41,8 @@ gridButton.addEventListener('click', () => {
         if (desiredGridSize <= 100) acceptableSize = true;
     }
 
-    console.log(desiredGridSize)
+    gridArea.removeChild(gridArea.firstChild);
+    generateGrid(desiredGridSize);
 
 
 })
