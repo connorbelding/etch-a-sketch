@@ -1,1 +1,2 @@
 # etch-a-sketch
+This is a simple Etch-A-Sketch using JS, HTML, and CSS.  This is pretty easy to make and fun to mess around with.  HTML custom attributes are very useful here because they are a great way to hold state information (here I used them to keep track of the brightness of each cell) about each grid cell without having to use JS.  Using JS for that would be way more of a hassle and probably less performant.
