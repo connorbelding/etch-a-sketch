@@ -1,3 +1,5 @@
+const gridButton = document.getElementById('change-grid-btn');
+
 function generateGrid(size = 16) {
     const container = document.createElement('div');
     container.classList.add('grid-container');
@@ -29,3 +31,17 @@ function handlePointerEnter(e) {
 }
 
 generateGrid()
+
+gridButton.addEventListener('click', () => {
+    let acceptableSize = false;
+    let desiredGridSize;
+    while (!acceptableSize) {
+        desiredGridSize = prompt('What size grid do you want?  No larger numbers than 100 please.');
+
+        if (desiredGridSize <= 100) acceptableSize = true;
+    }
+
+    console.log(desiredGridSize)
+
+
+})
