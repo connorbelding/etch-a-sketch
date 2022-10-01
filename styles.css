@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#grid-area {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.grid-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.grid-row {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.grid-cell {
+    background: black;
+    flex: 1 1 auto;
+
+}
